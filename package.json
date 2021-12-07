@@ -2,11 +2,12 @@
 	"name": "draft-js-live-markdown-plugin",
 	"version": "0.0.0",
 	"description": "A DraftJS plugin for writing markdown that styles and parses on the fly.",
-	"main": "dist/bundle.js",
+	"main": "lib/index.js",
 	"files": [
-		"dist/**/*"
+		"lib/**/*"
 	],
 	"scripts": {
+		"build:lib": "BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production node_modules/.bin/babel --out-dir='lib' --ignore='**/__test__/*' src",
 		"build:dev": "webpack-cli",
 		"build:less": "lessc demo/src/styles/index.less demo/public/styles/index.css",
 		"dev": "npm run build:dev && npm run build:less && browser-sync reload",
@@ -19,6 +20,7 @@
 	"author": "Brooks Parrish",
 	"license": "ISC",
 	"devDependencies": {
+		"@babel/cli": "^7.16.0",
 		"@babel/core": "^7.16.0",
 		"@babel/preset-env": "^7.16.4",
 		"@babel/preset-react": "^7.16.0",
