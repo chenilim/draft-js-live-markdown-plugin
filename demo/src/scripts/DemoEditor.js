@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { EditorState, ContentState } from 'draft-js';
-import Editor from 'draft-js-plugins-editor';
+import Editor from '@draft-js-plugins/editor';
 import createLiveMarkdownPlugin from 'draft-js-live-markdown-plugin';
 import Prism from 'prismjs';
 import createPrismPlugin from 'draft-js-prism-plugin';

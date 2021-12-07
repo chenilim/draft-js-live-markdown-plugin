@@ -1,48 +1,49 @@
 {
-  "name": "draft-js-live-markdown-plugin",
-  "version": "0.0.0",
-  "description": "A DraftJS plugin for writing markdown that styles and parses on the fly.",
-  "main": "dist/bundle.js",
-  "scripts": {
-    "build:dev": "webpack-cli",
-    "build:less": "lessc demo/src/styles/index.less demo/public/styles/index.css",
-    "dev": "npm run build:dev && npm run build:less && browser-sync reload",
-    "dev:watch": "npm run start | npm-watch dev",
-    "start": "node ./demo/server.js | browser-sync start --proxy 'localhost:3000' --files 'dist/*.js' 'demo/src/scripts/*.js' 'demo/src/styles/*.less'"
-  },
-  "watch": {
-    "dev": "{src, demo}/**/*.{js, less}"
-  },
-  "author": "Brooks Parrish",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "browser-sync": "^2.24.4",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.7.0",
-    "express": "^4.16.3",
-    "less": "^3.0.2",
-    "less-middleware": "^3.0.0",
-    "npm-watch": "^0.3.0",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
-  },
-  "dependencies": {
-    "draft-js": "^0.10.5",
-    "draft-js-plugins-editor": "^2.0.4",
-    "draft-js-prism-plugin": "^0.1.3",
-    "immutable": "^3.8.2",
-    "prismjs": "^1.14.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  }
+	"name": "draft-js-live-markdown-plugin",
+	"version": "0.0.0",
+	"description": "A DraftJS plugin for writing markdown that styles and parses on the fly.",
+	"main": "dist/bundle.js",
+	"scripts": {
+		"build:dev": "webpack-cli",
+		"build:less": "lessc demo/src/styles/index.less demo/public/styles/index.css",
+		"dev": "npm run build:dev && npm run build:less && browser-sync reload",
+		"dev:watch": "npm run start | npm-watch dev",
+		"start": "node ./demo/server.js | browser-sync start --proxy 'localhost:3000' --files 'dist/*.js' 'demo/src/scripts/*.js' 'demo/src/styles/*.less'"
+	},
+	"watch": {
+		"dev": "{src, demo}/**/*.{js, less}"
+	},
+	"author": "Brooks Parrish",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"@babel/preset-react": "^7.16.0",
+		"babel-eslint": "^8.2.3",
+		"babel-loader": "^8.2.3",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"browser-sync": "^2.27.7",
+		"eslint": "^8.4.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.27.1",
+		"express": "^4.17.1",
+		"less": "^4.1.2",
+		"less-middleware": "^3.1.0",
+		"npm-watch": "^0.11.0",
+		"webpack": "^5.65.0",
+		"webpack-cli": "^4.9.1"
+	},
+	"dependencies": {
+		"@draft-js-plugins/editor": "^4.1.0",
+		"draft-js": "^0.11.7",
+		"draft-js-prism-plugin": "^0.1.3",
+		"immutable": "^4.0.0",
+		"prismjs": "^1.25.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	}
 }
