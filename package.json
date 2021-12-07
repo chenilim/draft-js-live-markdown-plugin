@@ -3,6 +3,7 @@
 	"version": "0.0.0",
 	"description": "A DraftJS plugin for writing markdown that styles and parses on the fly.",
 	"main": "lib/index.js",
+	"types": "./types/draft-js-live-markdown-plugin.d.ts",
 	"files": [
 		"lib/**/*"
 	],
