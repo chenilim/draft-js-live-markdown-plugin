@@ -3,6 +3,9 @@
 	"version": "0.0.0",
 	"description": "A DraftJS plugin for writing markdown that styles and parses on the fly.",
 	"main": "dist/bundle.js",
+	"files": [
+		"dist/**/*"
+	],
 	"scripts": {
 		"build:dev": "webpack-cli",
 		"build:less": "lessc demo/src/styles/index.less demo/public/styles/index.css",
