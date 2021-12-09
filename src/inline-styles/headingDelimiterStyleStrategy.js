@@ -17,9 +17,7 @@ const createHeadingDelimiterStyleStrategy = () => {
       return headingDelimiterRanges;
     },
     styles: {
-      opacity: 0.4,
-      position: 'absolute',
-      transform: 'translateX(-100%)'
+      opacity: 0.4
     }
   };
 };

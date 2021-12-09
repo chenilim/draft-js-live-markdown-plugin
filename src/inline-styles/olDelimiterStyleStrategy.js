@@ -13,7 +13,7 @@ const createOLDelimiterStyleStrategy = () => {
     },
     styles: {
       position: 'absolute',
-      transform: 'translateX(calc(-100% - 12px))'
+      transform: 'translateX(12px)'
     }
   };
 };
