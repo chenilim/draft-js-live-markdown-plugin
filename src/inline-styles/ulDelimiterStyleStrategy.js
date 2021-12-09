@@ -12,9 +12,7 @@ const createULDelimiterStyleStrategy = () => {
       return ulDelimiterRanges;
     },
     styles: {
-      fontWeight: 'bold',
-      position: 'absolute',
-      transform: 'translateX(12px)'
+      fontWeight: 'bold'
     }
   };
 };

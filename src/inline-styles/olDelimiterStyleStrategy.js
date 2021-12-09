@@ -12,8 +12,7 @@ const createOLDelimiterStyleStrategy = () => {
       return olDelimiterRanges;
     },
     styles: {
-      position: 'absolute',
-      transform: 'translateX(12px)'
+      position: 'absolute'
     }
   };
 };
