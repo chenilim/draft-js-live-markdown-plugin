@@ -31,9 +31,7 @@ const createQuoteStyleStrategy = () => {
 			fontSize: '1.1em'
 		},
 		delimiterStyles: {
-			opacity: 0.4,
-			position: 'absolute',
-			transform: 'translateX(calc(-100%))'
+			opacity: 0.4
 		}
 	}
 }
